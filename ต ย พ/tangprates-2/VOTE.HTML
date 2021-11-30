@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Main</title>    
+            
+
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+             rel="stylesheet">
+
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+           integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+           crossorigin="anonymous" />
+
+            <link rel="stylesheet" href="style.css">
+        
+        </head>
+
+
+        <BODY>
+            <!--------------------------------------------------------แถบ ขวา เริ่ม--------------------------------------------------->
+            <div class="sidebar">
+              <div class="logo">
+                  <img src="/tempast/img/We-logos_white.png"alt=""></div>    <!--icon-->
+              <div class="sidbarOption active">
+                  <span class="material-icons">home</span> <!--icon home-->
+                  <a href="/tempast/main.html"><h2>Home</h2></a>
+              </div>
+             
+              <div class="sidbarOption">
+                  <span class="material-icons">notifications_none</span> <!--icon notifications-->
+                  <a href="/DONATE/index.html"><h2>Donate</h2></a>
+              </div>
+
+              <div class="sidbarOption">
+                  <span class="material-icons">list_alt</span> <!--icon List-->
+                  <a href="/post/post.html"><h2>Create a Poll</h2></a>
+              </div>
+              
+              <div class="sidbarOption">
+                  <span class="material-icons">perm_identity</span> <!--icon notifications-->
+                  <a href="/profile/VOTE.HTML"><h2>Profile</h2></a>
+              </div>
+          
+        
+             
+              <div class="sidbarOption">
+                  <span class="material-icons">perm_identity</span> <!--icon Profile-->
+                  <a href="/login/login.html"><h2>เข้าสู่ระบบ</h2></a>
+              </div>
+              <div class="sidbarOption">
+                  <span class="material-icons">perm_identity</span> <!--icon Profile-->
+                  <a href="/Register/singUp.HTMl"><h2>สร้างบัญชี</h2></a>
+              </div>
+              
+          </div>
+               
+                <button class="sidebar_tweet">สร้างบัญชี</button>
+            </div>
+           
+            <body ng-app='polApp'>
+                <!--engine-->
+                <div class="container" ng-controller="pollCtrl">
+                  <h1>เห็นด้วยกับการแทงเพื่อนที่ชอบแกล้งหรือไม่ #ข่าวต่างประเทศ</h1>
+                  <div class="poll">
+                  <img src="https://images.unsplash.com/flagged/photo-1591553234204-2d05772ba364?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a25pZmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt=></div>
+                  <div class="Text">
+                    ญี่ปุ่น 25 พ.ย.-เกิดเหตุนักเรียนชายญี่ปุ่นอายุ 14 ปี ใช้มีดแทงเพื่อนเสียชีวิต ในโรงเรียน ที่เมืองยาโตมิ จังหวัดไอจิ สารภาพก่อเหตุเพราะไม่พอใจที่ถูกกลั่นแกล้ง
+                  </div>
+                  <br>
+                  <div class="question" ng-hide="answered">
+              
+                    <button type="button" class="button-yes"name="Yes" ng-click="addYes(); answered = true">Yes</button>
+                    <button type="button" class="button-no"name="No" ng-click="addNo(); answered = true">No</button>
+                  </div>
+                  <!--Chart-->
+              
+                  <div class="loading_bars" ng-show="answered">
+                    <div class="cylinder">
+                      <div class="yes_fill fill" ng-style="{height: yesPer + '%'}"></div>
+                      <div class="per">{{yesPer}}%</div>
+                    </div>
+                    <div class="cylinder">
+                      <div class="no_fill fill" ng-style="{height: noPer + '%'}"></div>
+                       <div class="per">{{noPer}}%</div>
+                    </div>
+                  </div>
+              
+                  <div class="statistics" ng-show="answered">
+                    <div class="yes"><span class='yess'></span><span>YES</span></div>
+                    <div class="no"><span class='noo'></span><span>NO</spaN></div>
+                    
+                   
+                    <div class="total">total:{{total}}</div>
+              
+                  </div>
+              
+              
+                </div>
+              </body>
+              <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --twitter-color:#546e7a;
+    --twitter-background:#819ca9;
+    background-color: #29434e;
+    color: #E0E7E9;  /*  */
+}
+
+/*------------------------------------------ แถบขวา------------------------------------------------*/
+.sidbarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration:none;
+}
+    
+
+    h2{
+        color: white;
+        text-decoration:none;
+    }
+
+
+.sidbarOption .material-icons, 
+.fa-twitter {
+    padding: 20px;
+    
+}
+
+/* โลโก้*/
+.logo img {
+    
+    height: 20ch;
+    justify-content: center;
+    
+    
+}
+
+.sidbarOption h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* ขอบปุ่ม*/
+.sidbarOption:hover{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color:var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+
+
+/* ปุ่ม tweet*/
+.sidebar_tweet{
+    width: 100%;
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sidebar_tweet:hover{
+    background-color: var(--twitter-background);
+    color: var(--twitter-color);
+}
+
+/* ทำให้เป็นบล็อคทางขวา*/
+body{
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+/* ขีดบล็อคขวา */
+.sidebar{
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.2;
+    min-width: 250px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    c
+}
+
+
+
+/*------------------------------------------ แถบขวา------------------------------------------------*/
+
+
+/*--------------------------------------------------------ตรงกลาง เริ่ม---------------------------------------------------*/
+.feed{
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+.feed_header{
+    position: sticky;
+    top: 0;
+    background-color: #819ca9;
+    z-index: 100;
+    border:1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+.feed_header h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* ทำให้ไม่เห็น scrollbar*/
+.feed::-webkit-scrollbar{ 
+    display: none;          
+}
+
+.feed{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+
+
+/*------กล่อง  ข่าว ตรงกลาง ต้น-----*/
+.post_avatar img{
+    border-radius: 50%;
+    height: 40px;
+}
+.post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding: 10px;
+}
+.post_body img{
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.post_footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.post_badge {
+    font-size: 14px !important
+    color: var(--twitter-color);
+    margin-right: 5px;
+}
+.post_headerSpecial{
+    font-weight: 600;
+    font-size: 12px;
+    color:#8eacbb;
+}
+.post_headerText h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.post_headerDescription{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.post_body{
+    flex: 1;
+    padding: 10px;
+}
+.post_avatar{
+    padding: 10px;
+}
+/*------กล่อง  ข่าว ตรงกลาง จบ-----*/
+/*--------------------------------------------------------ตรงกลาง จบ---------------------------------------------------*/
+
+/*--------------------------------------------------------แถบ ขวา เริ่ม---------------------------------------------------*/
+
+
+
+
+
+
+
+
+.cont{
+    position:inherit
+    margin: 20px auto;
+    width: 500px;
+    height: 100px;
+    padding: 20px;
+  }
+  
+  .srchFld {
+    border: 0;
+    border-radius: 7px;
+    padding: 0 17px;
+    padding-right: 55px;
+    display: inline-block;
+    
+    width: 350px;
+    border-bottom: 5px solid #bdc3c7;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #7f8c8d;
+    font-size: 19px;
+    
+  }
+  
+  .srchFld:focus {
+    outline-color: rgba(255, 255, 255, 0);
+  }
+  
+  .srchBtn {
+    border: 0;
+    border-radius: 7px;
+    background: #e74c3c;
+    display: inline-block;
+    float: right;
+    width: 99px;
+    border-bottom: 5px solid #c0392b;
+    color: white;
+    height: px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .srchBtn:active {
+    border-bottom: 0px solid #c0392b;
+  }
+  
+  .ico {
+    position: absolute;
+    right: 135px;
+    top: 13px;
+    font-size: 35px;
+    color: #7f8c8d;
+  }
+  
+  .contact {
+    border-bottom: 2px solid #c8c8c8;
+    border-bottom-style: dashed;
+    padding: 15px;
+    height: 180px;
+  }
+  
+  .wrapr {
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  .imgWrpr {
+    float: left;
+    height: 180px;
+    width: 200px;
+    border-radius: 1px;
+    overflow: hidden;
+    
+  }
+  
+  .contact img {
+    height: 130px;
+    width: auto;
+  }
+  
+  .contactInfo {
+    display: inline-block;
+    float: left;
+    padding: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Voces', cursive;
+  }
+  
+  .name {
+    font-size: 13px;
+  }
+  
+  .animate-enter,
+  .animate-leave {
+    -moz-transition: cubic-bezier(0.25, 0.25, 0.75, 0.75) 400ms all;
+    -o-transition: cubic-bezier(0.25, 0.25, 0.75, 0.75) 400ms all;
+    -webkit-transition: cubic-bezier(0.25, 0.25, 0.75, 0.75) 400ms all;
+    transition: cubic-bezier(0.25, 0.25, 0.75, 0.75) 400ms all;
+    position: relative;
+    display: block;
+  }
+  
+  .animate-enter.animate-enter-active,
+  .animate-leave {
+    opacity: 1;
+  }
+  
+  .animate-leave.animate-leave-active,
+  .animate-enter {
+    opacity: 0;
+  }

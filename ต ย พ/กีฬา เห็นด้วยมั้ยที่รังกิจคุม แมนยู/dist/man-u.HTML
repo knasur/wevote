@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Main</title>    
+            
+
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+             rel="stylesheet">
+
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+           integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+           crossorigin="anonymous" />
+
+            <link rel="stylesheet" href="man-u.css">
+        
+        </head>
+
+
+        <BODY>
+            <!--------------------------------------------------------แถบ ขวา เริ่ม--------------------------------------------------->
+            <div class="sidebar">
+              <div class="logo">
+                  <img src="/tempast/img/We-logos_white.png"alt=""></div>    <!--icon-->
+              <div class="sidbarOption active">
+                  <span class="material-icons">home</span> <!--icon home-->
+                  <a href="/tempast/main.html"><h2>Home</h2></a>
+              </div>
+             
+              <div class="sidbarOption">
+                  <span class="material-icons">notifications_none</span> <!--icon notifications-->
+                  <a href="/DONATE/index.html"><h2>Donate</h2></a>
+              </div>
+
+              <div class="sidbarOption">
+                  <span class="material-icons">list_alt</span> <!--icon List-->
+                  <a href="/post/post.html"><h2>Create a Poll</h2></a>
+              </div>
+              
+              <div class="sidbarOption">
+                  <span class="material-icons">perm_identity</span> <!--icon notifications-->
+                  <a href="/profile/VOTE.HTML"><h2>Profile</h2></a>
+              </div>
+          
+        
+             
+              <div class="sidbarOption">
+                  <span class="material-icons">perm_identity</span> <!--icon Profile-->
+                  <a href="/login/login.html"><h2>เข้าสู่ระบบ</h2></a>
+              </div>
+              <div class="sidbarOption">
+                  <span class="material-icons">perm_identity</span> <!--icon Profile-->
+                  <a href="/Register/singUp.HTMl"><h2>สร้างบัญชี</h2></a>
+              </div>
+              
+          </div>
+           
+            <body ng-app='polApp'>
+                <!--engine-->
+                <div class="container" ng-controller="pollCtrl">
+                  <h1>Ralf Rangnick มา Man U!!?? </h1>
+                  <div class="poll">
+                  <img src="https://phantom-marca.unidadeditorial.es/66b0cc8983439b3bb05e6ddfe956d3d1/crop/0x26/2048x1176/resize/1320/f/jpg/assets/multimedia/imagenes/2021/11/25/16378644007639.jpg"alt=></div>
+                  <div class="text">
+                    ราล์ฟ รังนิค Ralf Rangnick เป็นกุนซือที่โชกโชนในสมรภูมิฟุตบอลเยอรมนี ในช่วงต้นยุค 2000s โดยเขาสามารถคุมทีมฮันโนเวอร์ เลื่อนขึ้นสู่ บุนเดสลีกาได้ จากนั้นเป็นเรื่องน่าเสียดายที่เขาพลาดได้ตำแหน่งผู้ช่วยผู้จัดการทีมชาติเยอรมันในยุคของ โยอัคคิม เลิฟ แต่ก็ มาได้งานคุมทีม ชาลเก้ แทน ในฤดูกาล 2004–2005  ซึ่งปีนั้นเขาพลิกโฉม ราชันสีน้ำเงิน จนเกือบจะเขย่าบัลลังก์แชมป์ของเสือใต้ บาเยิร์น มิวนิคได้ แต่น่าเสียดายที่พลาดไป โดยชาลเก้ จบที่รองแชมป์ ทั้งบุนเดสลีกา และเดเอฟเบ โพคาล คุณคิดว่าการมาในครั้งนี้จะทำให้แมนยูรอดพ้นวิกฤตหรือไม่
+                  </div>
+                  <br>
+                  <div class="question" ng-hide="answered">
+              
+                    <button type="button" class="button-yes"name="Yes" ng-click="addYes(); answered = true">รอด</button>
+                    <button type="button" class="button-no"name="No" ng-click="addNo(); answered = true">ไม่รอด</button>
+                  </div>
+                  <!--Chart-->
+              
+                  <div class="loading_bars" ng-show="answered">
+                    <div class="cylinder">
+                      <div class="yes_fill fill" ng-style="{height: yesPer + '%'}"></div>
+                      <div class="per">{{yesPer}}%</div>
+                    </div>
+                    <div class="cylinder">
+                      <div class="no_fill fill" ng-style="{height: noPer + '%'}"></div>
+                       <div class="per">{{noPer}}%</div>
+                    </div>
+                  </div>
+              
+                  <div class="statistics" ng-show="answered">
+                    <div class="yes"><span class='yess'></span><span>รอด</span></div>
+                    <div class="no"><span class='noo'></span><span>ไม่รอด</spaN></div>
+                    
+                   
+                    <div class="total">total:{{total}}</div>
+              
+                  </div>
+              
+              
+                </div>
+              </body>
+              <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js'></script><script  src="./man-u.js"></script>
+
+</body>
+</html>

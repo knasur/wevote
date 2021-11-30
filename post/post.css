@@ -1,0 +1,199 @@
+.body2 {
+    background-color: #171b24;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px; }
+
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+
+.section-form {margin:fit;
+    padding: auto;
+	background-color: #171b24;
+  width: 500px;
+  color: #FFF;
+}
+
+
+.section-form h1 {
+	text-align: center;
+	font-size: 1.6em;
+	margin-bottom: 0.6em;
+    
+}
+
+.section-form h2 {
+	text-align: center;
+	font-size: 1.23077em;
+}
+
+input[type=text] {
+	height: 45px;
+}
+
+input[type=text], textarea {
+	width: 100%;
+	margin-bottom: 1em;
+	font-size: .9em;
+	color: #cfcece;
+	font-weight: 300;
+	padding: .5em 1em;
+	border: none;
+	color: #555555;
+	font-weight: 300;
+}
+
+input[type=button] {
+	cursor: pointer;
+	margin: 50 50 50 50;
+  margin-left: 420px;
+	padding: .50em 2em;
+	background: #636363;
+	border: none;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400
+    ;
+}
+input[type=button-post] {text-align: center;
+	cursor: pointer;
+	margin: 55 370;
+  margin-left: 250px;
+  margin-top: 50px;
+	padding: .5em 2em;
+	background: #631e1e;
+	border: none;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 1400
+    ;
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@keyframes slide {
+  from {
+    height: 0;
+  }
+  to {
+    max-height: auto;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --twitter-color:#546e7a;
+  --twitter-background:#819ca9;
+  background-color: #29434e;
+  color: #E0E7E9;  /*  */
+}
+
+/*------------------------------------------ แถบขวา------------------------------------------------*/
+.sidbarOption{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.sidbarOption .material-icons, 
+.fa-twitter {
+  padding: 20px;
+}
+
+/* โลโก้*/
+.logo img {
+  
+  height: 20ch;
+  justify-content: center;
+  
+  
+}
+
+.sidbarOption h2{
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+/* ขอบปุ่ม*/
+.sidbarOption:hover{
+  background-color: var(--twitter-background);
+  border-radius: 30px;
+  color:var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+
+
+/* ปุ่ม tweet*/
+.sidebar_tweet{
+  width: 100%;
+  background-color: var(--twitter-color);
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.sidebar_tweet:hover{
+  background-color: var(--twitter-background);
+  color: var(--twitter-color);
+}
+
+/* ทำให้เป็นบล็อคทางขวา*/
+body{
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* ขีดบล็อคขวา */
+.sidebar{
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.2;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container{
+  padding: 10px 70px;
+}
+
+.feed{
+  flex: 0.5;
+  border-right: 1px solid var(--twitter-background);
+  min-width: fit-content;
+  
+}
+.feed_header{
+  position: sticky;
+  top: 0;
+  background-color: #819ca9;
+  z-index: 100;
+  border:1px solid var(--twitter-background);
+  padding: 15px 20px;
+}
+.feed_header h2{
+  font-size: 20px;
+  font-weight: 800;}
+  h2{
+    color: white;
+    text-decoration:none;
+  }

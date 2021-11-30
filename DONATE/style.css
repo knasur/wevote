@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --twitter-color:#546e7a;
+  --twitter-background:#819ca9;
+  background-color: #29434e;
+  color: #E0E7E9;  /*  */
+  
+}
+
+/*------------------------------------------ แถบขวา------------------------------------------------*/
+.sidbarOption{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.sidbarOption .material-icons, 
+.fa-twitter {
+  padding: 20px;
+}
+
+/* โลโก้*/
+.logo img {
+  
+  height: 20ch;
+  justify-content: center;
+  
+  
+}
+
+.sidbarOption h2{
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+/* ขอบปุ่ม*/
+.sidbarOption:hover{
+  background-color: var(--twitter-background);
+  border-radius: 30px;
+  color:var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+
+
+/* ปุ่ม tweet*/
+.sidebar_tweet{
+  width: 100%;
+  background-color: var(--twitter-color);
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.sidebar_tweet:hover{
+  background-color: var(--twitter-background);
+  color: var(--twitter-color);
+}
+
+/* ทำให้เป็นบล็อคทางขวา*/
+body{
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* ขีดบล็อคขวา */
+.sidebar{
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.2;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.donate {
+  /*padding: 50px*/
+  padding-left: 90px;
+  width: 1000px;
+  color: #FFF;
+}
+
+.donate p {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.donate h3 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.denomination {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding: 13px 0;
+  cursor: pointer;
+  background-color: #29434e;
+  margin: 0 1px 1px 0;
+  transition: background-color 0.2s ease;
+}
+
+.denomination label {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.denomination input {
+  left: -10001px;
+  position: absolute;
+}
+
+.denomination-other {
+  width: 99.8%;
+}
+
+.denomination-other input {
+  position: relative;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  width: inherit;
+  text-align: center;
+  background-color: #29434e;
+  border: none;
+  padding: 13px 0;
+  transition: background-color 0.2s ease;
+}
+
+.denomination-other input:hover {
+  background-color: #ce5c5c;
+}
+
+.denomination-other input:before {
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  content: "฿";
+}
+
+.donate-amount .selected, .denomination-other input.selected, .donate-amount .denomination:hover {
+  background-color: #a14a47;
+  border: 0;
+}
+
+.donate-black h2 {
+  font-family: "Oswald", sans-serif;
+  color: #FFF;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.donate-black h2 span {
+  display: block;
+  float: left;
+  font-size: 16px;
+  padding-top: 7px;
+  margin-right: 20px;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  
+  border-radius: 50%;
+}
+
+.donate-type label,
+.donate-payment label {
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 30px;
+}
+
+.donate-blue {
+  background-color: #546e7a;
+  padding: 25px;
+}
+
+.donate-black {
+  padding: 25px;
+}
+
+.donate-submit button {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  background-color: #41201f;
+  border: none;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 14px 0;
+  margin: 30px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.donate-submit small {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+:-moz-placeholder {
+  color: #FFF;
+  font-weight: 300;
+}
+
+::-moz-placeholder {
+  color: #FFF;
+  font-weight: 300;
+}
+
+:-ms-input-placeholder {
+  font-weight: 300;
+  color: #FFF;
+}
+
+*:focus {
+  outline: none;
+}
+h2{
+  color: white;
+  text-decoration:none;}

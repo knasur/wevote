@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Donate page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="/DONATE/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+crossorigin="anonymous" />
+</head>
+
+        <header>
+           
+        
+                <!--------------------------------------------------------แถบ ขวา เริ่ม--------------------------------------------------->
+                <div class="sidebar">
+                    <div class="logo">
+                        <img src="/tempast/img/We-logos_white.png"alt=""></div>    <!--icon-->
+                    <div class="sidbarOption active">
+                        <span class="material-icons">home</span> <!--icon home-->
+                        <a href="/tempast/main.html"><h2>Home</h2></a>
+                    </div>
+                   
+                    <div class="sidbarOption">
+                        <span class="material-icons">notifications_none</span> <!--icon notifications-->
+                        <a href="/DONATE/index.html"><h2>Donate</h2></a>
+                    </div>
+     
+                    <div class="sidbarOption">
+                        <span class="material-icons">list_alt</span> <!--icon List-->
+                        <a href="/post/post.html"><h2>Create a Poll</h2></a>
+                    </div>
+                    
+                    <div class="sidbarOption">
+                        <span class="material-icons">perm_identity</span> <!--icon notifications-->
+                        <a href="/profile/VOTE.HTML"><h2>Profile</h2></a>
+                    </div>
+                
+              
+                   
+                    <div class="sidbarOption">
+                        <span class="material-icons">perm_identity</span> <!--icon Profile-->
+                        <a href="/login/login.html"><h2>เข้าสู่ระบบ</h2></a>
+                    </div>
+                    <div class="sidbarOption">
+                        <span class="material-icons">perm_identity</span> <!--icon Profile-->
+                        <a href="/Register/singUp.HTMl"><h2>สร้างบัญชี</h2></a>
+                    </div>
+                    
+                </div>
+
+        </header>
+
+
+
+<body>
+<!-- partial:index.partial.html -->
+<div class="donate">
+  <div class="donate-black">
+    <h2><span></span> Donate</h3>
+    <p>สนับสนุนเรา </p>
+  </div>
+  <div class="donate-blue">
+    <h3></h3>
+    <div class="donate-amount-box">
+      <div class="donate-amount">
+        <div class="denomination selected">
+          <input autocomplete="off" type="radio" name="amount" id="amount5" value="30" checked="">
+          <label for="amount5">฿30</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount10" value="100">
+          <label for="amount10">฿100</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount15" value="150">
+          <label for="amount15">฿150</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount25" value="200">
+          <label for="amount25">฿200</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount50" value="1000">
+          <label for="amount50">฿1000</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount100" value="10000">
+          <label for="amount100">฿10000</label>
+        </div>
+      </div>
+      <div class="denomination-other">
+          <input autocomplete="off" type="text" name="amount" value="" placeholder="Enter Other Amount">
+        </div>
+    </div>
+  </div>
+  <div class="donate-black donate-type">
+  
+    <label>
+    			<input type="radio" name="donation_type" value="single" checked="checked" autocomplete="off" class="required">
+    			One-Time
+    </label>
+    <label>
+    			<input type="radio" name="donation_type" value="recurring" autocomplete="off" class="required">
+    			Monthly
+    </label>
+  </div>
+  <div class="donate-blue donate-payment">
+    <h3>Payment Method</h3>
+    <div>
+      <label>
+        <input type="radio" name="payment" value="paypal" checked="checked" autocomplete="off">PayPal
+      </label>
+      <label>
+        <input type="radio" name="payment" value="crypto" autocomplete="off">Cryptocurrency
+      </label>
+    </div>
+    <div class="donate-submit">
+      <button type="submit" autocomplete="off">Donate ฿5</button>
+      <p><small>Please note that contributions are not tax-deductible.</small></p>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
